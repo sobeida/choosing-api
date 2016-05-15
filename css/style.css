@@ -1,0 +1,35 @@
+heading-section {
+    font-size: 6em;
+    text-align: center;
+}
+
+body {
+    background-color: cornflowerblue;
+    font-family: sans-serif;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.heading section h1 {
+    font-family: 'josefin sans', arial, serif;
+    font-weight: 600;
+    color: #40525b;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 15px 0 5px 28px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.h1 {
+    font-size: 6em;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    font-size: 500%;
+    padding-top: 500rem;
+    color: blue;
+}
