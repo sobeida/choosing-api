@@ -1,35 +1,49 @@
-heading-section {
-    font-size: 6em;
+header {
+    background-image: url(../images/lighrussia_c.jpg);
+    color: white;
     text-align: center;
+    padding: 6em 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: none;
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 1rem;
 }
 
-body {
-    background-color: cornflowerblue;
-    font-family: sans-serif;
+h1 {
+    background-image: url(../images/lighrussia_c.jpeg);
+    font-size: 3em;
     text-align: center;
-    font-family: sans-serif;
+    width: 300px;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
 }
 
-.heading section h1 {
-    font-family: 'josefin sans', arial, serif;
-    font-weight: 600;
-    color: #40525b;
-    font-size: 20px;
-    letter-spacing: 0.2em;
+main {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    margin: 15px 0 5px 28px;
-    text-transform: uppercase;
-    font-weight: normal;
+    margin-bottom: 1rem;
 }
 
-.h1 {
-    font-size: 6em;
-    text-align: center;
+section {
+    display: inline-block;
+    width: 46 %;
+    padding: 1%;
+    border: 1px solid red;
+    vertical-align: top;
 }
 
-.header {
-    text-align: center;
-    font-size: 500%;
-    padding-top: 500rem;
-    color: blue;
+ul {
+    list-style-type: none;
+    padding: 25px;
+    margin: auto;
 }
+
+#searchsubmit {}
