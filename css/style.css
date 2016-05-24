@@ -16,16 +16,17 @@ header {
 h1 {
     background-image: url(../images/lighrussia_c.jpeg);
     font-size: 3em;
+    font-family: "Arial Black", Gadget, sans-serif;
     text-align: center;
     width: 300px;
     padding: 25px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2em;
+    margin-top: 0.50em;
 }
 
 main {
-    width: 95%;
+    width: 100 %;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -34,7 +35,7 @@ main {
 
 section {
     display: inline-block;
-    width: 46 %;
+    width: 35.5%;
     padding: 1%;
     border: 1px solid red;
     vertical-align: top;
@@ -42,7 +43,7 @@ section {
 
 ul {
     list-style-type: none;
-    padding: 25px;
+    padding: 100px;
     margin: auto;
 }
 
