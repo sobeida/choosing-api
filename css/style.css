@@ -26,7 +26,7 @@ h1 {
 }
 
 main {
-    width: 100 %;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -35,7 +35,7 @@ main {
 
 section {
     display: inline-block;
-    width: 35.5%;
+    width: 36%;
     padding: 1%;
     border: 1px solid red;
     vertical-align: top;
@@ -45,6 +45,8 @@ ul {
     list-style-type: none;
     padding: 100px;
     margin: auto;
+    text-align: left;
+    line-height: 400%;
 }
 
 #searchsubmit {}
