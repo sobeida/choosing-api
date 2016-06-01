@@ -33,6 +33,99 @@ main {
     margin-bottom: 1rem;
 }
 
+.header-search-button {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 2px 0px 5px #999;
+    font-size: 15px;
+    margin-left: -8px;
+    margin-top: 5px;
+    overflow: hidden;
+    padding: 10px 13px 10px 10px;
+    background: #34A8C4;
+    border: 1px solid #34A8C4;
+    color: #fff;
+}
+
+.search {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+
+.cards-container .card .card-image-preview {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.content-smaller {
+    margin-top: 300px;
+}
+
+.content {
+    padding: 30px;
+}
+
+div {
+    display: block;
+}
+
+.card-page {
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 21px;
+    width: 82%;
+    background: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 1px 2px #ddd;
+    font-size: 14px;
+    color: #444;
+}
+
+.card-page .card-table tr td:last-child {
+    text-align: left;
+    width: 50%;
+    border-top: 20px solid #fff;
+}
+
+td,
+th {
+    padding: 0;
+}
+
+.card-back-link {
+    float: left;
+    color: #fff;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+
 section {
     display: inline-block;
     width: 36%;
