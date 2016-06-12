@@ -1,3 +1,66 @@
+/* -------------------------------------
+CSS reset
+(all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+}
+
+
+/* -------------------------------------
+General styles (General Module, wrapping around the modules bellow)
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+div {
+    display: block;
+}
+
+section {
+    display: inline-block;
+    width: 47%;
+    padding: 1%;
+    border: 1px solid red;
+    vertical-align: top;
+}
+
+ul {
+    list-style-type: none;
+    margin: auto;
+    text-align: left;
+    line-height: 200%;
+}
+
+td,
+th {
+    padding: 0;
+}
+
+
+/* -------------------------------------
+Header styles (Main Module)
+(all the styles inside the < header > or < nav > tags)
+*/
+
 header {
     background-image: url(../images/lighrussia_c.jpg);
     color: white;
@@ -13,10 +76,9 @@ header {
     margin-bottom: 1rem;
 }
 
-h1 {
-    background-image: url(../images/lighrussia_c.jpeg);
+header h1 {
     font-size: 3em;
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: "Arial Black", "Gadget", sans-serif;
     text-align: center;
     width: 300px;
     padding: 25px;
@@ -24,6 +86,12 @@ h1 {
     margin-right: auto;
     margin-top: 0.50em;
 }
+
+
+/* -------------------------------------
+Content styles (Main Module)
+(all the styles inside the < sections > or < aside > tags)
+*/
 
 main {
     width: 90%;
@@ -33,18 +101,25 @@ main {
     margin-bottom: 1rem;
 }
 
-.header-search-button {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    box-shadow: 2px 0px 5px #999;
-    font-size: 15px;
-    margin-left: -8px;
-    margin-top: 5px;
-    overflow: hidden;
-    padding: 10px 13px 10px 10px;
-    background: #34A8C4;
-    border: 1px solid #34A8C4;
-    color: #fff;
+input[type=text] {
+    padding: 5px;
+    border: 2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color: #333;
+}
+
+input[type=submit],
+button {
+    padding: 5px 15px;
+    background: #ccc;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }
 
 .search {
@@ -57,15 +132,6 @@ main {
     transform: translate(0, 0);
 }
 
-.cards-container .card .card-image-preview {
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
 .content-smaller {
     margin-top: 300px;
 }
@@ -74,8 +140,29 @@ main {
     padding: 30px;
 }
 
-div {
-    display: block;
+.result-container-right li {
+    width: 100%;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+
+.cards-container,
+.card,
+.card-image-preview {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .card-page {
@@ -92,54 +179,16 @@ div {
     color: #444;
 }
 
-.card-page .card-table tr td:last-child {
-    text-align: left;
-    width: 50%;
-    border-top: 20px solid #fff;
-}
 
-td,
-th {
-    padding: 0;
-}
+/* -------------------------------------
+Footer styles (Main Module)
+(all the styles inside the < footer > tag)
+*/
 
-.card-back-link {
-    float: left;
-    color: #fff;
-    margin-top: 5px;
-    margin-left: 10px;
-    padding: 10px;
-    width: 40px;
-    height: 40px;
-    background: #fff;
-    border-radius: 50%;
-    text-align: center;
-}
 
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transform: translate(0, 0);
-}
-
-section {
-    display: inline-block;
-    width: 36%;
-    padding: 1%;
-    border: 1px solid red;
-    vertical-align: top;
-}
-
-ul {
-    list-style-type: none;
-    padding: 100px;
-    margin: auto;
-    text-align: left;
-    line-height: 400%;
-}
-
-#searchsubmit {}
+/* -------------------------------------
+place all the desktop styles above this line
+Responsive styles
+(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+place all the mobile tables styles bellow this line
+*/
