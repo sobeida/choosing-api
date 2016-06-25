@@ -36,10 +36,9 @@ div {
 }
 
 section {
-    display: inline-block;
-    width: 47%;
+    display: block;
+    width: 98%;
     padding: 1%;
-    border: 1px solid red;
     vertical-align: top;
 }
 
@@ -140,8 +139,28 @@ button {
     padding: 30px;
 }
 
-.result-container-right li {
-    width: 100%;
+.result-container li {
+    width: 31%;
+    display: inline-block;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1rem;
+    vertical-align: top;
+}
+
+.result-container li .card-title {
+    max-height: 65px;
+    overflow: hidden;
+}
+
+.result-container li .item-image {
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.result-container li .card-description {
+    max-height: 200px;
+    overflow: scroll;
 }
 
 .fa {
